@@ -1,0 +1,1070 @@
+{
+    "config": {
+        "scoop_repo": "https://github.com/ScoopInstaller/Scoop",
+        "scoop_branch": "master"
+    },
+    "apps": [
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "7zip",
+            "Version": "26.00",
+            "Updated": "\/Date(1773490309852)\/"
+        },
+        {
+            "Info": "Held package",
+            "Source": "https://github.com/brian6932/dank-scoop/raw/master/bucket/7zTC.json",
+            "Name": "7zTC",
+            "Version": "2.5",
+            "Updated": "\/Date(1744856904148)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/okibcn/ScoopMaster/raw/master/bucket/adata-ssdtoolbox.json",
+            "Name": "adata-ssdtoolbox",
+            "Version": "5.2.7",
+            "Updated": "\/Date(1716893570088)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "adb",
+            "Version": "37.0.0",
+            "Updated": "\/Date(1775009332898)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/okibcn/ScoopMaster/raw/master/bucket/adb-appcontrol.json",
+            "Name": "adb-appcontrol",
+            "Version": "1.8.5",
+            "Updated": "\/Date(1728890356718)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/anderlli0053/DEV-tools/raw/master/bucket/aegisub-wangqr.json",
+            "Name": "aegisub-wangqr",
+            "Version": "3.3.3",
+            "Updated": "\/Date(1716893000219)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "android-clt",
+            "Version": "13114758",
+            "Updated": "\/Date(1757848449228)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "apktool",
+            "Version": "3.0.1",
+            "Updated": "\/Date(1775009326298)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "aria2",
+            "Version": "1.37.0-1",
+            "Updated": "\/Date(1746035310396)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "atomicparsley",
+            "Version": "20240608.083822.1ed9031",
+            "Updated": "\/Date(1747703861669)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/naderi/scoop-bucket/raw/master/bucket/audacity-ffmpeg-plugin.json",
+            "Name": "audacity-ffmpeg-plugin",
+            "Version": "5.0.0",
+            "Updated": "\/Date(1747462171432)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "autohotkey",
+            "Version": "2.0.19",
+            "Updated": "\/Date(1759906120214)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://raw.githubusercontent.com/tech189/tech189-bucket/master/bucket/beautysearch.json",
+            "Name": "beautysearch",
+            "Version": "1.17",
+            "Updated": "\/Date(1708775105082)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "bento4",
+            "Version": "1.6.0-641",
+            "Updated": "\/Date(1746125101157)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "cacert",
+            "Version": "2026-03-19",
+            "Updated": "\/Date(1775009318688)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "caffeine",
+            "Version": "1.98",
+            "Updated": "\/Date(1771856101006)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "cheat-engine",
+            "Version": "7.6",
+            "Updated": "\/Date(1746890170675)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "cmder",
+            "Version": "1.3.25",
+            "Updated": "\/Date(1749651552841)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "compactgui",
+            "Version": "3.8.0",
+            "Updated": "\/Date(1750259409893)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "cpu-z",
+            "Version": "2.15",
+            "Updated": "\/Date(1748405825326)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "curl",
+            "Version": "8.17.0_6",
+            "Updated": "\/Date(1767440867002)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "cursor",
+            "Version": "1.0.0",
+            "Updated": "\/Date(1749668554534)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "czkawka",
+            "Version": "11.0.1",
+            "Updated": "\/Date(1775009281915)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "dark",
+            "Version": "3.14.1",
+            "Updated": "\/Date(1746033894998)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "deno",
+            "Version": "2.7.10",
+            "Updated": "\/Date(1775009315613)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://raw.githubusercontent.com/hermanjustnu/scoop-emulators/master/bucket/desmume.json",
+            "Name": "desmume",
+            "Version": "1472",
+            "Updated": "\/Date(1721101323119)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "devdocs",
+            "Version": "0.7.2",
+            "Updated": "\/Date(1669372318990)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "ditto",
+            "Version": "3.24.246.0",
+            "Updated": "\/Date(1746035457620)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "dnslookup",
+            "Version": "1.11.1",
+            "Updated": "\/Date(1764219626299)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ScoopInstaller/Nirsoft/raw/master/bucket/dnslookupview.json",
+            "Name": "dnslookupview",
+            "Version": "1.18",
+            "Updated": "\/Date(1764219839753)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ScoopInstaller/Nirsoft/raw/master/bucket/domainlookuptools.json",
+            "Name": "domainlookuptools",
+            "Version": "1.56",
+            "Updated": "\/Date(1764219859117)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "eartrumpet",
+            "Version": "2.3.0",
+            "Updated": "\/Date(1746055362812)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/zizhengwu/scoop_bucket/raw/master/bucket/eden.json",
+            "Name": "eden",
+            "Version": "0.0.3-rc2",
+            "Updated": "\/Date(1754574912371)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "edit",
+            "Version": "1.2.1",
+            "Updated": "\/Date(1761789767341)\/"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Name": "everything-alpha",
+            "Version": "1.5.0.1404a",
+            "Updated": "\/Date(1770873373969)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "fastcopy",
+            "Version": "5.10.0",
+            "Updated": "\/Date(1752588424630)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "fastfetch",
+            "Version": "2.61.0",
+            "Updated": "\/Date(1775009172250)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "fd",
+            "Version": "10.2.0",
+            "Updated": "\/Date(1746073273678)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "ffmpeg-shared",
+            "Version": "8.1",
+            "Updated": "\/Date(1775009165776)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "figma",
+            "Version": "125.8.8",
+            "Updated": "\/Date(1759052877751)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts/raw/master/bucket/FiraCode-NF.json",
+            "Name": "FiraCode-NF",
+            "Version": "3.4.0",
+            "Updated": "\/Date(1746035612273)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts/raw/master/bucket/FiraCode-NF-Mono.json",
+            "Name": "FiraCode-NF-Mono",
+            "Version": "3.4.0",
+            "Updated": "\/Date(1746035887632)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "fzf",
+            "Version": "0.70.0",
+            "Updated": "\/Date(1775009130384)\/"
+        },
+        {
+            "Info": "",
+            "Source": "games",
+            "Name": "game-backup-monitor",
+            "Version": "1.4.1",
+            "Updated": "\/Date(1748269685740)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "gcc",
+            "Version": "15.2.0",
+            "Updated": "\/Date(1773468538359)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "gh",
+            "Version": "2.83.1",
+            "Updated": "\/Date(1765352122012)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "ghostscript",
+            "Version": "10.05.1",
+            "Updated": "\/Date(1746097013945)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "git",
+            "Version": "2.49.0",
+            "Updated": "\/Date(1773498421526)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "go",
+            "Version": "1.25.3",
+            "Updated": "\/Date(1762071772206)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "goodbyedpi",
+            "Version": "0.2.2",
+            "Updated": "\/Date(1678823656000)\/"
+        },
+        {
+            "Info": "",
+            "Source": "<auto-generated>",
+            "Name": "gradle",
+            "Version": "8.12",
+            "Updated": "\/Date(1757843047072)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "gsudo",
+            "Version": "2.6.0",
+            "Updated": "\/Date(1746035300728)\/"
+        },
+        {
+            "Info": "",
+            "Source": "games",
+            "Name": "heroic-games-launcher",
+            "Version": "2.18.1",
+            "Updated": "\/Date(1767610408506)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "httptoolkit",
+            "Version": "1.25.0",
+            "Updated": "\/Date(1775009113076)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "hwinfo",
+            "Version": "8.28-5770",
+            "Updated": "\/Date(1752588985265)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "hyper",
+            "Version": "3.4.1",
+            "Updated": "\/Date(1761090190505)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "hyperfine",
+            "Version": "1.19.0",
+            "Updated": "\/Date(1761090200571)\/"
+        },
+        {
+            "Info": "",
+            "Source": "nonportable",
+            "Name": "icaros-np",
+            "Version": "3.3.4_b1",
+            "Updated": "\/Date(1746059041735)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "identme",
+            "Version": "0.6.0",
+            "Updated": "\/Date(1764219518235)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "imagemagick",
+            "Version": "7.1.1-47",
+            "Updated": "\/Date(1746095329152)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "imagine",
+            "Version": "2.5.2",
+            "Updated": "\/Date(1772286157335)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "innounp",
+            "Version": "2.64.4",
+            "Updated": "\/Date(1747462740546)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ScoopInstaller/Nirsoft/raw/master/bucket/installedcodec.json",
+            "Name": "installedcodec",
+            "Version": "1.30",
+            "Updated": "\/Date(1746329712699)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "irfanview",
+            "Version": "4.72",
+            "Updated": "\/Date(1747462812276)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/notPlancha/bucket/raw/master/bucket/Iriun.json",
+            "Name": "Iriun",
+            "Version": "2.9",
+            "Updated": "\/Date(1757409295579)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "jadx",
+            "Version": "1.5.3",
+            "Updated": "\/Date(1757834579068)\/"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Name": "jdownloader",
+            "Version": "nightly-20250501",
+            "Updated": "\/Date(1746062111605)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "keepassxc",
+            "Version": "2.7.10",
+            "Updated": "\/Date(1746059461745)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "librespeed-cli",
+            "Version": "1.0.12",
+            "Updated": "\/Date(1752589443360)\/"
+        },
+        {
+            "Info": "",
+            "Source": "games",
+            "Name": "lime3ds",
+            "Version": "2119.1",
+            "Updated": "\/Date(1736409411842)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/anderlli0053/DEV-tools/raw/master/bucket/LinkShellExtension.json",
+            "Name": "LinkShellExtension",
+            "Version": "3.9.3.5",
+            "Updated": "\/Date(1746056929252)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "locale-emulator",
+            "Version": "2.5.0.1",
+            "Updated": "\/Date(1746106103516)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "lsd",
+            "Version": "1.1.5",
+            "Updated": "\/Date(1746077401646)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "ludusavi",
+            "Version": "0.29.1",
+            "Updated": "\/Date(1748269710308)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ScoopInstaller/Nirsoft/raw/master/bucket/macaddressview.json",
+            "Name": "macaddressview",
+            "Version": "1.51",
+            "Updated": "\/Date(1764219848436)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "make",
+            "Version": "4.4.1",
+            "Updated": "\/Date(1773468874570)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "micro",
+            "Version": "2.0.14",
+            "Updated": "\/Date(1761131283403)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "mkvtoolnix",
+            "Version": "93.0",
+            "Updated": "\/Date(1752589431359)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "mpv-git",
+            "Version": "20260226",
+            "Updated": "\/Date(1772118220275)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/hu3rror/scoop-muggle/raw/master/bucket/mpv-handler.json",
+            "Name": "mpv-handler",
+            "Version": "0.4.2",
+            "Updated": "\/Date(1775008857342)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "n-m3u8dl-cli",
+            "Version": "3.0.2",
+            "Updated": "\/Date(1697513705535)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://raw.githubusercontent.com/qwerty12/scoop-alts/master/bucket/n-m3u8dl-re.json",
+            "Name": "n-m3u8dl-re",
+            "Version": "0.5.1-beta+20251029142047",
+            "Updated": "\/Date(1775008865947)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "neovim",
+            "Version": "0.11.1",
+            "Updated": "\/Date(1747357751429)\/"
+        },
+        {
+            "Info": "Held package",
+            "Source": "extras",
+            "Name": "nilesoft-shell",
+            "Version": "1.8.1",
+            "Updated": "\/Date(1730767490861)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "nodejs-lts",
+            "Version": "24.14.1",
+            "Updated": "\/Date(1775008932828)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/joaoricarte/jr-bucket/raw/main/bucket/nomacs.json",
+            "Name": "nomacs",
+            "Version": "3.22.0",
+            "Updated": "\/Date(1772547249402)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "ntop",
+            "Version": "0.3.21",
+            "Updated": "\/Date(1748447004851)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "obsidian",
+            "Version": "1.8.10",
+            "Updated": "\/Date(1746192397172)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "openssl-light",
+            "Version": "3.5.2",
+            "Updated": "\/Date(1757202650407)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "php",
+            "Version": "8.4.7",
+            "Updated": "\/Date(1746581893702)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/okibcn/ScoopMaster/raw/master/bucket/picasaphotoviewer.json",
+            "Name": "picasaphotoviewer",
+            "Version": "0.0.1",
+            "Updated": "\/Date(1716346096989)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ygguorun/scoop-bucket/raw/master/bucket/PotPlayer-old.json",
+            "Name": "PotPlayer-old",
+            "Version": "1.7.18958",
+            "Updated": "\/Date(1716375762001)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/Dumpinground/simulator-tools/raw/master/bucket/ps2-bios.json",
+            "Name": "ps2-bios",
+            "Version": "latest",
+            "Updated": "\/Date(1716727977196)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "psreadline",
+            "Version": "2.4.5",
+            "Updated": "\/Date(1775008851161)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ocdc/scoop-bucket/raw/main/bucket/puloversmacrocreator.json",
+            "Name": "puloversmacrocreator",
+            "Version": "5.4.1",
+            "Updated": "\/Date(1755993026018)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "pulsar",
+            "Version": "1.129.0",
+            "Updated": "\/Date(1761091369631)\/"
+        },
+        {
+            "Info": "",
+            "Source": "<auto-generated>",
+            "Name": "python",
+            "Version": "3.12.10",
+            "Updated": "\/Date(1767443903086)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/MANICX100/scoop/raw/refs/heads/main/QRes.json",
+            "Name": "QRes",
+            "Version": "1.1.0",
+            "Updated": "\/Date(1746511867607)\/"
+        },
+        {
+            "Info": "",
+            "Source": "nonportable",
+            "Name": "qttabbar-np",
+            "Version": "2048-beta2",
+            "Updated": "\/Date(1746035578948)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "rclone",
+            "Version": "1.70.3",
+            "Updated": "\/Date(1752589082662)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "renamer",
+            "Version": "7.8",
+            "Updated": "\/Date(1752589119844)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "ripgrep",
+            "Version": "15.1.0",
+            "Updated": "\/Date(1775008847031)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "rtss",
+            "Version": "7.3.6",
+            "Updated": "\/Date(1711601418354)\/"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Name": "ruffle-nightly",
+            "Version": "2025-11-25",
+            "Updated": "\/Date(1767195698035)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "rust",
+            "Version": "1.90.0",
+            "Updated": "\/Date(1760793845224)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/IsaacShoebottom/scoop-bucket/raw/master/bucket/ryujinx-ava.json",
+            "Name": "ryujinx-ava",
+            "Version": "r0b111b3",
+            "Updated": "\/Date(1728887743932)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "scoop-search",
+            "Version": "2.1.0",
+            "Updated": "\/Date(1774113169452)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "scratch",
+            "Version": "3.29.1",
+            "Updated": "\/Date(1772702191230)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "scrcpy",
+            "Version": "3.3.1",
+            "Updated": "\/Date(1757212777537)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "sed",
+            "Version": "4.9",
+            "Updated": "\/Date(1746270370835)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "sfsu",
+            "Version": "1.17.2",
+            "Updated": "\/Date(1775008836141)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/qwerty12/scoop-alts/raw/refs/heads/master/bucket/shaka-packager-mod.json",
+            "Name": "shaka-packager-mod",
+            "Version": "3.0.2",
+            "Updated": "\/Date(1746088290528)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "sharex",
+            "Version": "19.0.2",
+            "Updated": "\/Date(1775008814160)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "speedtest-cli",
+            "Version": "1.2.0",
+            "Updated": "\/Date(1746073350214)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "starship",
+            "Version": "1.23.0",
+            "Updated": "\/Date(1746063155503)\/"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Name": "steam",
+            "Version": "nightly-20260105",
+            "Updated": "\/Date(1767610797906)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/0b1000/bucket/raw/main/bucket/steam-auto-crack.json",
+            "Name": "steam-auto-crack",
+            "Version": "3.5.0.3",
+            "Updated": "\/Date(1772624927928)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ViCrack/scoop-bucket/raw/master/bucket/subfinder.json",
+            "Name": "subfinder",
+            "Version": "2.9.0",
+            "Updated": "\/Date(1762073263107)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "sublime-merge",
+            "Version": "2121",
+            "Updated": "\/Date(1770689585410)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "sublime-text",
+            "Version": "4-4200",
+            "Updated": "\/Date(1752544431788)\/"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Name": "sumatrapdf-installer",
+            "Version": "3.6",
+            "Updated": "\/Date(1775009360445)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ScoopInstaller/Java/raw/master/bucket/temurin-lts-jdk.json",
+            "Name": "temurin-lts-jdk",
+            "Version": "25.0.2-10.0.LTS",
+            "Updated": "\/Date(1775008699832)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "terminal-icons",
+            "Version": "0.11.0",
+            "Updated": "\/Date(1746063109624)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "tor-browser",
+            "Version": "14.5.7",
+            "Updated": "\/Date(1758637512647)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "trafficmonitor-lite",
+            "Version": "1.86",
+            "Updated": "\/Date(1775008628774)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "ugrep",
+            "Version": "7.5.0",
+            "Updated": "\/Date(1752589095940)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "unigetui",
+            "Version": "3.3.7",
+            "Updated": "\/Date(1774113098739)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "vcredist-aio",
+            "Version": "0.92.0",
+            "Updated": "\/Date(1752589362754)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "vscode",
+            "Version": "1.110.0",
+            "Updated": "\/Date(1772717178164)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "wget",
+            "Version": "1.21.4",
+            "Updated": "\/Date(1746545726345)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ScoopInstaller/Nirsoft/raw/master/bucket/whosip.json",
+            "Name": "whosip",
+            "Version": "1.18",
+            "Updated": "\/Date(1747078401387)\/"
+        },
+        {
+            "Info": "",
+            "Source": "mylocal",
+            "Name": "windowtabs",
+            "Version": "v2022.02.26",
+            "Updated": "\/Date(1695608279453)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "winget",
+            "Version": "1.28.190",
+            "Updated": "\/Date(1775008613030)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "winscp",
+            "Version": "6.5.6",
+            "Updated": "\/Date(1775009349109)\/"
+        },
+        {
+            "Info": "",
+            "Source": "nonportable",
+            "Name": "wireguard-np",
+            "Version": "0.5.3",
+            "Updated": "\/Date(1746035500655)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "wiztree",
+            "Version": "4.26",
+            "Updated": "\/Date(1752589482903)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/ScoopInstaller/Nirsoft/raw/master/bucket/wnetwatcher.json",
+            "Name": "wnetwatcher",
+            "Version": "2.43",
+            "Updated": "\/Date(1752589374801)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/detain/scoop-emulators/raw/master/bucket/x/x360ce.json",
+            "Name": "x360ce",
+            "Version": "3.2.9.82",
+            "Updated": "\/Date(1737426592199)\/"
+        },
+        {
+            "Info": "",
+            "Source": "kubi",
+            "Name": "xiaomiadbfastboottools",
+            "Version": "3.0.7",
+            "Updated": "\/Date(1702711568366)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "ytsubconverter",
+            "Version": "1.6.3",
+            "Updated": "\/Date(1737803136338)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/cmontage/scoopbucket-third/raw/main/bucket/yuzu-pineapple.json",
+            "Name": "yuzu-pineapple",
+            "Version": "EA-4176",
+            "Updated": "\/Date(1728887255487)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "zen-browser",
+            "Version": "1.17.8b",
+            "Updated": "\/Date(1763767513088)\/"
+        }
+    ],
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main",
+            "Updated": {
+                "value": "\/Date(1775005493000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Wednesday, April 1, 2026 8:04:53 AM"
+            },
+            "Manifests": 1480
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": {
+                "value": "\/Date(1775005550000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Wednesday, April 1, 2026 8:05:50 AM"
+            },
+            "Manifests": 2285
+        },
+        {
+            "Name": "versions",
+            "Source": "https://github.com/ScoopInstaller/Versions",
+            "Updated": {
+                "value": "\/Date(1774990780000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Wednesday, April 1, 2026 3:59:40 AM"
+            },
+            "Manifests": 560
+        },
+        {
+            "Name": "nonportable",
+            "Source": "https://github.com/ScoopInstaller/Nonportable",
+            "Updated": {
+                "value": "\/Date(1774990754000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Wednesday, April 1, 2026 3:59:14 AM"
+            },
+            "Manifests": 131
+        },
+        {
+            "Name": "games",
+            "Source": "https://github.com/Calinou/scoop-games",
+            "Updated": {
+                "value": "\/Date(1775005500000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Wednesday, April 1, 2026 8:05:00 AM"
+            },
+            "Manifests": 393
+        },
+        {
+            "Name": "mylocal",
+            "Source": "~\\scoop\\buckets\\mylocal",
+            "Updated": "\/Date(1721276082444)\/",
+            "Manifests": 9
+        },
+        {
+            "Name": "utils",
+            "Source": "https://github.com/couleur-tweak-tips/utils",
+            "Updated": {
+                "value": "\/Date(1751360725000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Tuesday, July 1, 2025 4:05:25 PM"
+            },
+            "Manifests": 20
+        }
+    ]
+}
