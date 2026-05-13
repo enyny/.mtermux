@@ -113,7 +113,7 @@ while true; do
             ;;
 
         g)
-            gallery-dl "$url"
+            flock "$HOME/.dlp_log/.gallery_dl.lock" gallery-dl "$url"
             termux-wake-unlock
             exit 0
             ;;
