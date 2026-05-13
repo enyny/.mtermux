@@ -1,5 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+# based on https://gist.github.com/LordH3lmchen/dc35e8df3dc41d126683f18fe44ebe17/raw/d25654068ac7821c2e29a41057dff2d66c92350b/termux-url-opener
+
 # curl -LO https://raw.githubusercontent.com/enyny/.mtermux/refs/heads/main/termux-url-opener
 # pkg i ffmpeg aria2 python && pip install -U --pre "yt-dlp[default,curl-cffi]" gallery-dl
 # mkdir -P "$HOME/bin"
