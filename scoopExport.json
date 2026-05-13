@@ -1,7 +1,8 @@
 {
     "config": {
         "scoop_repo": "https://github.com/ScoopInstaller/Scoop",
-        "scoop_branch": "master"
+        "scoop_branch": "master",
+        "aria2-warning-enabled": false
     },
     "apps": [
         {
@@ -48,10 +49,24 @@
         },
         {
             "Info": "",
+            "Source": "extras",
+            "Name": "alldup",
+            "Version": "4.5.72",
+            "Updated": "\/Date(1777897666237)\/"
+        },
+        {
+            "Info": "",
             "Source": "main",
             "Name": "android-clt",
             "Version": "13114758",
             "Updated": "\/Date(1757848449228)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "apkeep",
+            "Version": "0.18.0",
+            "Updated": "\/Date(1777959194955)\/"
         },
         {
             "Info": "",
@@ -118,10 +133,31 @@
         },
         {
             "Info": "",
+            "Source": "main",
+            "Name": "chafa",
+            "Version": "1.18.2",
+            "Updated": "\/Date(1777813505770)\/"
+        },
+        {
+            "Info": "",
             "Source": "extras",
             "Name": "cheat-engine",
             "Version": "7.6",
             "Updated": "\/Date(1746890170675)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "clink-flex-prompt",
+            "Version": "0.18",
+            "Updated": "\/Date(1777539128186)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/gigberg/localbucket/raw/main/bucket/clink-gizmos.json",
+            "Name": "clink-gizmos",
+            "Version": "0.2026.04.10",
+            "Updated": "\/Date(1776243958485)\/"
         },
         {
             "Info": "",
@@ -136,6 +172,13 @@
             "Name": "compactgui",
             "Version": "3.8.0",
             "Updated": "\/Date(1750259409893)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "coreutils",
+            "Version": "5.97.3",
+            "Updated": "\/Date(1777849883553)\/"
         },
         {
             "Info": "",
@@ -246,8 +289,22 @@
             "Info": "",
             "Source": "versions",
             "Name": "everything-alpha",
-            "Version": "1.5.0.1404a",
-            "Updated": "\/Date(1770873373969)\/"
+            "Version": "1.5.0.1408a",
+            "Updated": "\/Date(1776143084304)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "executor",
+            "Version": "2.2.11",
+            "Updated": "\/Date(1778554731194)\/"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Name": "explorerplusplus-dev",
+            "Version": "1.5.0.2777",
+            "Updated": "\/Date(1777768045158)\/"
         },
         {
             "Info": "",
@@ -275,28 +332,7 @@
             "Source": "main",
             "Name": "ffmpeg-shared",
             "Version": "8.1",
-            "Updated": "\/Date(1775009165776)\/"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "figma",
-            "Version": "125.8.8",
-            "Updated": "\/Date(1759052877751)\/"
-        },
-        {
-            "Info": "",
-            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts/raw/master/bucket/FiraCode-NF.json",
-            "Name": "FiraCode-NF",
-            "Version": "3.4.0",
-            "Updated": "\/Date(1746035612273)\/"
-        },
-        {
-            "Info": "",
-            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts/raw/master/bucket/FiraCode-NF-Mono.json",
-            "Name": "FiraCode-NF-Mono",
-            "Version": "3.4.0",
-            "Updated": "\/Date(1746035887632)\/"
+            "Updated": "\/Date(1778004084434)\/"
         },
         {
             "Info": "",
@@ -321,17 +357,10 @@
         },
         {
             "Info": "",
-            "Source": "main",
-            "Name": "gh",
-            "Version": "2.83.1",
-            "Updated": "\/Date(1765352122012)\/"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "ghostscript",
-            "Version": "10.05.1",
-            "Updated": "\/Date(1746097013945)\/"
+            "Source": "https://github.com/phnthnhnm/Scoop/raw/master/bucket/get-sauce.json",
+            "Name": "get-sauce",
+            "Version": "1.7.0",
+            "Updated": "\/Date(1776213319590)\/"
         },
         {
             "Info": "",
@@ -343,9 +372,16 @@
         {
             "Info": "",
             "Source": "main",
-            "Name": "go",
-            "Version": "1.25.3",
-            "Updated": "\/Date(1762071772206)\/"
+            "Name": "gitignore",
+            "Version": "0.2018.07.25",
+            "Updated": "\/Date(1777435802491)\/"
+        },
+        {
+            "Info": "",
+            "Source": "games",
+            "Name": "gogdl",
+            "Version": "1.2.1",
+            "Updated": "\/Date(1775899048817)\/"
         },
         {
             "Info": "",
@@ -356,17 +392,24 @@
         },
         {
             "Info": "",
-            "Source": "<auto-generated>",
-            "Name": "gradle",
-            "Version": "8.12",
-            "Updated": "\/Date(1757843047072)\/"
-        },
-        {
-            "Info": "",
             "Source": "main",
             "Name": "gsudo",
             "Version": "2.6.0",
             "Updated": "\/Date(1746035300728)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/svbgabriel/my-scoop-bucket/raw/main/bucket/h2testw.json",
+            "Name": "h2testw",
+            "Version": "1.4",
+            "Updated": "\/Date(1777959173681)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "hashcheck",
+            "Version": "2.4.0",
+            "Updated": "\/Date(1777768084293)\/"
         },
         {
             "Info": "",
@@ -391,13 +434,6 @@
         },
         {
             "Info": "",
-            "Source": "extras",
-            "Name": "hyper",
-            "Version": "3.4.1",
-            "Updated": "\/Date(1761090190505)\/"
-        },
-        {
-            "Info": "",
             "Source": "main",
             "Name": "hyperfine",
             "Version": "1.19.0",
@@ -407,15 +443,8 @@
             "Info": "",
             "Source": "nonportable",
             "Name": "icaros-np",
-            "Version": "3.3.4_b1",
-            "Updated": "\/Date(1746059041735)\/"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "identme",
-            "Version": "0.6.0",
-            "Updated": "\/Date(1764219518235)\/"
+            "Version": "3.3.5",
+            "Updated": "\/Date(1776247102751)\/"
         },
         {
             "Info": "",
@@ -435,8 +464,8 @@
             "Info": "",
             "Source": "main",
             "Name": "innounp",
-            "Version": "2.64.4",
-            "Updated": "\/Date(1747462740546)\/"
+            "Version": "2.67.7",
+            "Updated": "\/Date(1776246954373)\/"
         },
         {
             "Info": "",
@@ -454,20 +483,6 @@
         },
         {
             "Info": "",
-            "Source": "https://github.com/notPlancha/bucket/raw/master/bucket/Iriun.json",
-            "Name": "Iriun",
-            "Version": "2.9",
-            "Updated": "\/Date(1757409295579)\/"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "jadx",
-            "Version": "1.5.3",
-            "Updated": "\/Date(1757834579068)\/"
-        },
-        {
-            "Info": "",
             "Source": "versions",
             "Name": "jdownloader",
             "Version": "nightly-20250501",
@@ -475,10 +490,31 @@
         },
         {
             "Info": "",
+            "Source": "main",
+            "Name": "jq",
+            "Version": "1.8.1",
+            "Updated": "\/Date(1777766200437)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "kdenlive",
+            "Version": "25.12.3",
+            "Updated": "\/Date(1776212769956)\/"
+        },
+        {
+            "Info": "",
             "Source": "extras",
             "Name": "keepassxc",
             "Version": "2.7.10",
             "Updated": "\/Date(1746059461745)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "komorebi",
+            "Version": "0.1.40",
+            "Updated": "\/Date(1776142104972)\/"
         },
         {
             "Info": "",
@@ -512,8 +548,8 @@
             "Info": "",
             "Source": "main",
             "Name": "lsd",
-            "Version": "1.1.5",
-            "Updated": "\/Date(1746077401646)\/"
+            "Version": "1.2.0",
+            "Updated": "\/Date(1776246970842)\/"
         },
         {
             "Info": "",
@@ -531,17 +567,17 @@
         },
         {
             "Info": "",
-            "Source": "main",
-            "Name": "make",
-            "Version": "4.4.1",
-            "Updated": "\/Date(1773468874570)\/"
+            "Source": "nonportable",
+            "Name": "mactype-np",
+            "Version": "1.2025.6.9",
+            "Updated": "\/Date(1778209237783)\/"
         },
         {
             "Info": "",
             "Source": "main",
-            "Name": "micro",
-            "Version": "2.0.14",
-            "Updated": "\/Date(1761131283403)\/"
+            "Name": "make",
+            "Version": "4.4.1",
+            "Updated": "\/Date(1773468874570)\/"
         },
         {
             "Info": "",
@@ -554,8 +590,8 @@
             "Info": "",
             "Source": "extras",
             "Name": "mpv-git",
-            "Version": "20260226",
-            "Updated": "\/Date(1772118220275)\/"
+            "Version": "20260411",
+            "Updated": "\/Date(1775898926168)\/"
         },
         {
             "Info": "",
@@ -594,17 +630,17 @@
         },
         {
             "Info": "",
-            "Source": "main",
-            "Name": "nodejs-lts",
-            "Version": "24.14.1",
-            "Updated": "\/Date(1775008932828)\/"
-        },
-        {
-            "Info": "",
             "Source": "https://github.com/joaoricarte/jr-bucket/raw/main/bucket/nomacs.json",
             "Name": "nomacs",
             "Version": "3.22.0",
             "Updated": "\/Date(1772547249402)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "nssm",
+            "Version": "2.24-103",
+            "Updated": "\/Date(1778062303946)\/"
         },
         {
             "Info": "",
@@ -619,6 +655,13 @@
             "Name": "obsidian",
             "Version": "1.8.10",
             "Updated": "\/Date(1746192397172)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "oh-my-posh",
+            "Version": "29.10.0",
+            "Updated": "\/Date(1776138087427)\/"
         },
         {
             "Info": "",
@@ -643,6 +686,13 @@
         },
         {
             "Info": "",
+            "Source": "main",
+            "Name": "poppler",
+            "Version": "25.12.0-0",
+            "Updated": "\/Date(1777766214266)\/"
+        },
+        {
+            "Info": "",
             "Source": "https://github.com/ygguorun/scoop-bucket/raw/master/bucket/PotPlayer-old.json",
             "Name": "PotPlayer-old",
             "Version": "1.7.18958",
@@ -660,7 +710,7 @@
             "Source": "extras",
             "Name": "psreadline",
             "Version": "2.4.5",
-            "Updated": "\/Date(1775008851161)\/"
+            "Updated": "\/Date(1776238316153)\/"
         },
         {
             "Info": "",
@@ -668,20 +718,6 @@
             "Name": "puloversmacrocreator",
             "Version": "5.4.1",
             "Updated": "\/Date(1755993026018)\/"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "pulsar",
-            "Version": "1.129.0",
-            "Updated": "\/Date(1761091369631)\/"
-        },
-        {
-            "Info": "",
-            "Source": "<auto-generated>",
-            "Name": "python",
-            "Version": "3.12.10",
-            "Updated": "\/Date(1767443903086)\/"
         },
         {
             "Info": "",
@@ -695,7 +731,7 @@
             "Source": "nonportable",
             "Name": "qttabbar-np",
             "Version": "2048-beta2",
-            "Updated": "\/Date(1746035578948)\/"
+            "Updated": "\/Date(1778330697868)\/"
         },
         {
             "Info": "",
@@ -710,6 +746,13 @@
             "Name": "renamer",
             "Version": "7.8",
             "Updated": "\/Date(1752589119844)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "resvg",
+            "Version": "0.47.0",
+            "Updated": "\/Date(1777766220904)\/"
         },
         {
             "Info": "",
@@ -734,13 +777,6 @@
         },
         {
             "Info": "",
-            "Source": "main",
-            "Name": "rust",
-            "Version": "1.90.0",
-            "Updated": "\/Date(1760793845224)\/"
-        },
-        {
-            "Info": "",
             "Source": "https://github.com/IsaacShoebottom/scoop-bucket/raw/master/bucket/ryujinx-ava.json",
             "Name": "ryujinx-ava",
             "Version": "r0b111b3",
@@ -748,10 +784,10 @@
         },
         {
             "Info": "",
-            "Source": "main",
-            "Name": "scoop-search",
-            "Version": "2.1.0",
-            "Updated": "\/Date(1774113169452)\/"
+            "Source": "extras",
+            "Name": "scoop-completion",
+            "Version": "0.3.0",
+            "Updated": "\/Date(1776174093042)\/"
         },
         {
             "Info": "",
@@ -766,13 +802,6 @@
             "Name": "scrcpy",
             "Version": "3.3.1",
             "Updated": "\/Date(1757212777537)\/"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "sed",
-            "Version": "4.9",
-            "Updated": "\/Date(1746270370835)\/"
         },
         {
             "Info": "",
@@ -794,6 +823,13 @@
             "Name": "sharex",
             "Version": "19.0.2",
             "Updated": "\/Date(1775008814160)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "space",
+            "Version": "1.1.6",
+            "Updated": "\/Date(1776143365762)\/"
         },
         {
             "Info": "",
@@ -825,13 +861,6 @@
         },
         {
             "Info": "",
-            "Source": "https://github.com/ViCrack/scoop-bucket/raw/master/bucket/subfinder.json",
-            "Name": "subfinder",
-            "Version": "2.9.0",
-            "Updated": "\/Date(1762073263107)\/"
-        },
-        {
-            "Info": "",
             "Source": "extras",
             "Name": "sublime-merge",
             "Version": "2121",
@@ -860,17 +889,17 @@
         },
         {
             "Info": "",
-            "Source": "extras",
-            "Name": "terminal-icons",
-            "Version": "0.11.0",
-            "Updated": "\/Date(1746063109624)\/"
+            "Source": "main",
+            "Name": "tere",
+            "Version": "1.6.0",
+            "Updated": "\/Date(1777768064757)\/"
         },
         {
             "Info": "",
             "Source": "extras",
-            "Name": "tor-browser",
-            "Version": "14.5.7",
-            "Updated": "\/Date(1758637512647)\/"
+            "Name": "terminal-icons",
+            "Version": "0.11.0",
+            "Updated": "\/Date(1746063109624)\/"
         },
         {
             "Info": "",
@@ -882,16 +911,30 @@
         {
             "Info": "",
             "Source": "main",
-            "Name": "ugrep",
-            "Version": "7.5.0",
-            "Updated": "\/Date(1752589095940)\/"
+            "Name": "typos",
+            "Version": "1.45.1",
+            "Updated": "\/Date(1776145458399)\/"
         },
         {
             "Info": "",
-            "Source": "extras",
-            "Name": "unigetui",
-            "Version": "3.3.7",
-            "Updated": "\/Date(1774113098739)\/"
+            "Source": "main",
+            "Name": "ugrep",
+            "Version": "7.6.0",
+            "Updated": "\/Date(1776247204745)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/fahim-ahmed05/scoop-bucket/raw/master/bucket/umpv.json",
+            "Name": "umpv",
+            "Version": "1.5.1",
+            "Updated": "\/Date(1778433439903)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "uv",
+            "Version": "0.11.8",
+            "Updated": "\/Date(1778341937369)\/"
         },
         {
             "Info": "",
@@ -912,7 +955,14 @@
             "Source": "main",
             "Name": "wget",
             "Version": "1.21.4",
-            "Updated": "\/Date(1746545726345)\/"
+            "Updated": "\/Date(1777849891369)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "whkd",
+            "Version": "0.2.10",
+            "Updated": "\/Date(1776142229003)\/"
         },
         {
             "Info": "",
@@ -923,17 +973,24 @@
         },
         {
             "Info": "",
-            "Source": "mylocal",
-            "Name": "windowtabs",
-            "Version": "v2022.02.26",
-            "Updated": "\/Date(1695608279453)\/"
+            "Source": "extras",
+            "Name": "windows-terminal",
+            "Version": "1.24.10921.0",
+            "Updated": "\/Date(1777813566278)\/"
         },
         {
             "Info": "",
-            "Source": "main",
-            "Name": "winget",
-            "Version": "1.28.190",
-            "Updated": "\/Date(1775008613030)\/"
+            "Source": "https://github.com/rocklerson/scoop-bucket/raw/main/bucket/windowtabs.json",
+            "Name": "windowtabs",
+            "Version": "2025.06.30",
+            "Updated": "\/Date(1777959468285)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "winpty",
+            "Version": "0.4.3",
+            "Updated": "\/Date(1777765653712)\/"
         },
         {
             "Info": "",
@@ -944,10 +1001,10 @@
         },
         {
             "Info": "",
-            "Source": "nonportable",
+            "Source": "<auto-generated>",
             "Name": "wireguard-np",
             "Version": "0.5.3",
-            "Updated": "\/Date(1746035500655)\/"
+            "Updated": "\/Date(1775999881409)\/"
         },
         {
             "Info": "",
@@ -972,10 +1029,31 @@
         },
         {
             "Info": "",
-            "Source": "kubi",
-            "Name": "xiaomiadbfastboottools",
-            "Version": "3.0.7",
-            "Updated": "\/Date(1702711568366)\/"
+            "Source": "https://github.com/thegamerx1/scoop_bucket/raw/master/bucket/xiaomiadb.json",
+            "Name": "xiaomiadb",
+            "Version": "7.0.3",
+            "Updated": "\/Date(1777959973261)\/"
+        },
+        {
+            "Info": "",
+            "Source": "https://github.com/xrgzs/sdoog/raw/master/bucket/xyplorer.json",
+            "Name": "xyplorer",
+            "Version": "28.30.0600-x64",
+            "Updated": "\/Date(1777960460886)\/"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "yasb",
+            "Version": "1.9.1",
+            "Updated": "\/Date(1776244766148)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "yazi",
+            "Version": "26.1.22",
+            "Updated": "\/Date(1775900058123)\/"
         },
         {
             "Info": "",
@@ -993,10 +1071,10 @@
         },
         {
             "Info": "",
-            "Source": "extras",
-            "Name": "zen-browser",
-            "Version": "1.17.8b",
-            "Updated": "\/Date(1763767513088)\/"
+            "Source": "main",
+            "Name": "zoxide",
+            "Version": "0.9.9",
+            "Updated": "\/Date(1777766217273)\/"
         }
     ],
     "buckets": [
@@ -1004,39 +1082,39 @@
             "Name": "main",
             "Source": "https://github.com/ScoopInstaller/Main",
             "Updated": {
-                "value": "\/Date(1775005493000)\/",
+                "value": "\/Date(1777753982000)\/",
                 "DisplayHint": 2,
-                "DateTime": "Wednesday, April 1, 2026 8:04:53 AM"
+                "DateTime": "Sunday, May 3, 2026 3:33:02 AM"
             },
-            "Manifests": 1480
+            "Manifests": 1514
         },
         {
             "Name": "extras",
             "Source": "https://github.com/ScoopInstaller/Extras",
             "Updated": {
-                "value": "\/Date(1775005550000)\/",
+                "value": "\/Date(1776243269000)\/",
                 "DisplayHint": 2,
-                "DateTime": "Wednesday, April 1, 2026 8:05:50 AM"
+                "DateTime": "Wednesday, April 15, 2026 3:54:29 PM"
             },
-            "Manifests": 2285
+            "Manifests": 2293
         },
         {
             "Name": "versions",
             "Source": "https://github.com/ScoopInstaller/Versions",
             "Updated": {
-                "value": "\/Date(1774990780000)\/",
+                "value": "\/Date(1776246878000)\/",
                 "DisplayHint": 2,
-                "DateTime": "Wednesday, April 1, 2026 3:59:40 AM"
+                "DateTime": "Wednesday, April 15, 2026 4:54:38 PM"
             },
-            "Manifests": 560
+            "Manifests": 571
         },
         {
             "Name": "nonportable",
             "Source": "https://github.com/ScoopInstaller/Nonportable",
             "Updated": {
-                "value": "\/Date(1774990754000)\/",
+                "value": "\/Date(1776246817000)\/",
                 "DisplayHint": 2,
-                "DateTime": "Wednesday, April 1, 2026 3:59:14 AM"
+                "DateTime": "Wednesday, April 15, 2026 4:53:37 PM"
             },
             "Manifests": 131
         },
@@ -1044,27 +1122,17 @@
             "Name": "games",
             "Source": "https://github.com/Calinou/scoop-games",
             "Updated": {
-                "value": "\/Date(1775005500000)\/",
+                "value": "\/Date(1776243252000)\/",
                 "DisplayHint": 2,
-                "DateTime": "Wednesday, April 1, 2026 8:05:00 AM"
+                "DateTime": "Wednesday, April 15, 2026 3:54:12 PM"
             },
-            "Manifests": 393
+            "Manifests": 397
         },
         {
             "Name": "mylocal",
             "Source": "~\\scoop\\buckets\\mylocal",
             "Updated": "\/Date(1721276082444)\/",
             "Manifests": 9
-        },
-        {
-            "Name": "utils",
-            "Source": "https://github.com/couleur-tweak-tips/utils",
-            "Updated": {
-                "value": "\/Date(1751360725000)\/",
-                "DisplayHint": 2,
-                "DateTime": "Tuesday, July 1, 2025 4:05:25 PM"
-            },
-            "Manifests": 20
         }
     ]
 }
