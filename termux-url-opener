@@ -1,5 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+# curl -LO https://raw.githubusercontent.com/enyny/.mtermux/refs/heads/main/termux-url-opener
+# pkg i ffmpeg aria2 python && pip install -U --pre "yt-dlp[default,curl-cffi]" gallery-dl
+# mkdir -P "$HOME/bin"
+# ln -sf "$HOME/termux-url-opener" "$HOME/bin/termux-url-opener" && ln -sf "$HOME/termux-url-opener" "$HOME/bin/termux-file-editor"
+
 termux-wake-lock
 
 url="$1"
