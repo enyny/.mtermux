@@ -9,7 +9,7 @@ pkg update -y
 pkg install -y tur-repo git hub python fish android-tools wget htop speedtest-go \
     aria2 lsd rust php rclone termux-api ffmpeg fzf ripgrep uv ncdu \
     deno atomicparsley openssh ani-cli termux-am vim python-cryptography \
-    openjdk-25 golang msedit dos2unix termus-services
+    openjdk-25 golang msedit dos2unix termux-services
 
 # Directory Structure
 mkdir -p "$HOME/bin" "$HOME/.termux"
