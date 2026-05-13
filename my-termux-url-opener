@@ -1,106 +1,135 @@
 #!/data/data/com.termux/files/usr/bin/bash
-#
-# This is a termux-url-opener script to do diffrent tasks on my Android phone 
-#
-#
-#
-# How to use this script
-#############################
-# 
-# Install git
-# ➜ ~ pkg install git
-# 
-# clone this script
-# ➜ ~ git clone https://gist.github.com/dc35e8df3dc41d126683f18fe44ebe17.git $HOME/termux-url-opener
-#
-# Create the bin directory
-# ➜ ~ mkdir bin
-#
-# Link the script
-# ➜ ~ ln -s $HOME/termux-url-opener/.my-termux-url-opener $HOME/bin/termux-url-opener
-# ➜ ~ ln -s $HOME/termux-url-opener/.my-termux-url-opener $HOME/bin/termux-file-editor
-# 
-# run the following command to enable the termux storage features
-# ➜ termux-setup-storage
-# 
-# https://wiki.termux.com/wiki/Termux-setup-storage
-#
-# the script downloads the needed tools on first use.
 
+termux-wake-lock
 
-url=$1
-echo "What should I do with $url ?"
-echo "1) yt-dlp no-config "
-echo "2) yt-dlp audio "
-echo "3) yt-dlp split audio "
-echo "4) yt-dlp 480 "
-echo "7) yt-dlp 720 "
-echo "0) yt-dlp mp3 "
+url="$1"
+
+LOCKFILE="$HOME/.dlp_log/.yt-dlp.lock"
+LOGDIR="$HOME/.dlp_log"
+mkdir -p "$LOGDIR"
+
+echo "What should I do with:"
+echo "$url"
+echo
+echo "1) yt-dlp no-config"
+echo "2) yt-dlp audio"
+echo "3) yt-dlp split audio"
+echo "4) yt-dlp 480"
+echo "7) yt-dlp 720"
+echo "0) yt-dlp mp3"
 echo "g) gallery-dl"
-# echo "y) download youtube video to movies-folder"
-# echo "u) download youtube video and convert it to mp3 (music-folder)"
-# echo "s) download with scdl (soundcloud)"
-# echo "t) download torrent"
 echo "a) download aria2c"
-# echo "w) wget file to download-folder" 
 echo "z) nothing"
 
-read CHOICE
-case $CHOICE in
-  1)
-    yt-dlp --no-config --no-mtime --restrict-filenames -o "/storage/emulated/0/ytdlp/video/%(webpage_url_domain)s/%(title)s_[%(id)s].%(ext)s" $url
-    ;;
+run_bg() {
+    (
+        # Acquire an exclusive lock on the lockfile
+        # This blocks execution until the previous download finishes
+        exec 9>"$LOCKFILE"
+        flock -x 9
 
-  2)
-    yt-dlp --x $url
-    ;;
+        "$@"
 
-  3)
-    yt-dlp --xpl $url
-    ;;
+        termux-media-scan "/storage/" >/dev/null 2>&1
+        termux-wake-unlock
+    ) >/dev/null 2>&1 & disown
 
-  4)
-    yt-dlp --4 $url
-    ;;
+    exit 0
+}
 
-  7)
-    yt-dlp --7 $url
-    ;;
+new_log() {
+    echo "$LOGDIR/$(date +%Y%m%d-%H%M%S).log"
+}
 
-  0)
-    yt-dlp --xx $url
-    ;;
+while true; do
+    printf "\nChoice: "
 
-  g)
-    gallery-dl $url
-    ;;
+    read -rn 1 CHOICE
+    echo
 
-#  s)
-#    scdl -l $url --path /storage/emulated/0/Music
-#    echo "s need some work"
-#    ;;
-  
-#  w)
-#    cd ~/storage/downloads
-#    wget $url
-#    ;;
-  
-#  t)
-#    echo "running torrents"
-#    transmission-remote 127.0.0.1 -l
-#    if [ ! $? eq 0 ]; then # start daemon if necessary
-#      transmission-daemon
-#      sleep 3
-#    fi
-#    echo "use transmission-remote to manage your downloads (read the manpage)"
-#    transmission-remote 127.0.0.1 -a $(cat $url) 
-#    ;;
-    
-  a)
-    aria2c --seed-time=0 -d "/storage/emulated/0/Downloads" $url
-    ;;
+    case "$CHOICE" in
 
-  z)
-    echo "bye"
-    ;; 
-  esac
+        1)
+            logfile=$(new_log)
+
+            run_bg \
+            sh -c '
+                yt-dlp \
+                --no-config \
+                --no-mtime \
+                -o "%(webpage_url_domain)s/%(title)s [%(id)s].%(ext)s" \
+                "$1" >> "$2" 2>&1
+            ' sh "$url" "$logfile"
+            ;;
+
+        2)
+            logfile=$(new_log)
+
+            run_bg \
+            sh -c '
+                yt-dlp --x "$1" >> "$2" 2>&1
+            ' sh "$url" "$logfile"
+            ;;
+
+        3)
+            logfile=$(new_log)
+
+            run_bg \
+            sh -c '
+                yt-dlp --xpl "$1" >> "$2" 2>&1
+            ' sh "$url" "$logfile"
+            ;;
+
+        4)
+            logfile=$(new_log)
+
+            run_bg \
+            sh -c '
+                yt-dlp --4 "$1" >> "$2" 2>&1
+            ' sh "$url" "$logfile"
+            ;;
+
+        7)
+            logfile=$(new_log)
+
+            run_bg \
+            sh -c '
+                yt-dlp --7 "$1" >> "$2" 2>&1
+            ' sh "$url" "$logfile"
+            ;;
+
+        0)
+            logfile=$(new_log)
+
+            run_bg \
+            sh -c '
+                yt-dlp --xx "$1" >> "$2" 2>&1
+            ' sh "$url" "$logfile"
+            ;;
+
+        g)
+            gallery-dl "$url"
+            termux-wake-unlock
+            exit 0
+            ;;
+
+        a)
+            aria2c \
+                --seed-time=0 \
+                "$url"
+
+            termux-wake-unlock
+            exit 0
+            ;;
+
+        z)
+            echo "bye"
+            termux-wake-unlock
+            exit 0
+            ;;
+
+        *)
+            echo "Invalid choice"
+            ;;
+    esac
+done
