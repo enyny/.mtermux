@@ -28,7 +28,6 @@ export CARGO_BUILD_TARGET=aarch64-linux-android
 export ANDROID_API_LEVEL=24
 
 # Python Packages
-pip install --upgrade pip
 pip install --pre "yt-dlp[default,curl-cffi]" gallery-dl pip-autoremove zombie-imp thefuck pywidevine pyplayready
 pip cache purge
 
