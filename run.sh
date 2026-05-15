@@ -9,7 +9,7 @@ pkg update -y
 pkg install -y tur-repo git hub python fish android-tools wget htop speedtest-go \
     aria2 lsd rust php rclone termux-api ffmpeg fzf ripgrep uv ncdu \
     deno atomicparsley openssh ani-cli termux-am vim python-cryptography \
-    openjdk-25 golang msedit dos2unix walk termux-services
+    openjdk-25 golang msedit dos2unix walk python-psutil termux-services
 
 # Directory Structure
 mkdir -p "$HOME/bin" "$HOME/.termux"
@@ -44,4 +44,4 @@ fish -c "
     curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher;
     fisher install IlanCosman/tide@v6; 
 "
-fish -c "tide configure --auto --style=Lean --prompt_colors='True color' --show_time='24-hour format' --lean_prompt_height='Two lines' --prompt_connection=Dotted --prompt_connection_andor_frame_color=Lightest --prompt_spacing=Sparse --icons='Many icons' --transient=Yes;"
+fish -c "tide configure --style=Lean --prompt_colors='True color' --show_time='24-hour format' --lean_prompt_height='Two lines' --prompt_connection=Dotted --prompt_connection_andor_frame_color=Lightest --prompt_spacing=Sparse --icons='Many icons' --transient=Yes;"
