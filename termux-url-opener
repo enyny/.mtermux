@@ -36,7 +36,7 @@ run_bg() {
 
         "$@"
 
-        termux-media-scan "/storage/" >/dev/null 2>&1
+        termux-media-scan "/storage/6235-3339/" >/dev/null 2>&1
         termux-wake-unlock
     ) >/dev/null 2>&1 & disown
 
