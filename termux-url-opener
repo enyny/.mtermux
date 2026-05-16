@@ -17,11 +17,12 @@ echo "What should I do with:"
 echo "$url"
 echo
 echo "1) yt_dlp_no_config"
-echo "2) yt_dlp_audio_only"
-echo "3) yt_dlp_split_audio"
+echo "2) yt_dlp_audio_only_no_playlist"
+echo "3) yt_dlp_audio_only"
 echo "4) yt_dlp_480"
 echo "7) yt_dlp_720"
 echo "0) yt_dlp_mp3"
+echo "s) yt_dlp_split_audio"
 echo "g) gallery_dl"
 echo "a) dl_with_aria2c"
 echo "z) nothing"
@@ -72,16 +73,16 @@ while true; do
 
             run_bg \
             sh -c '
-                yt-dlp --x "$1" >> "$2" 2>&1
+                yt-dlp --x --no-playlist "$1" >> "$2" 2>&1
             ' sh "$url" "$logfile"
             ;;
-
+            
         3)
             logfile=$(new_log)
 
             run_bg \
             sh -c '
-                yt-dlp --xpl "$1" >> "$2" 2>&1
+                yt-dlp --x "$1" >> "$2" 2>&1
             ' sh "$url" "$logfile"
             ;;
 
@@ -109,6 +110,15 @@ while true; do
             run_bg \
             sh -c '
                 yt-dlp --xx "$1" >> "$2" 2>&1
+            ' sh "$url" "$logfile"
+            ;;
+
+        s)
+            logfile=$(new_log)
+
+            run_bg \
+            sh -c '
+                yt-dlp --xpl "$1" >> "$2" 2>&1
             ' sh "$url" "$logfile"
             ;;
 
