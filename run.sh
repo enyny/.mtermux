@@ -37,11 +37,11 @@ dos2unix $HOME/bin/*
 
 termux-wake-unlock
 
+chsh -s fish
+
 # Fish
 fish -c "
     fish_add_path $HOME/bin/;
     curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher;
     fisher install IlanCosman/tide@v6; 
 "
-chsh -s fish
-fish -l -c "tide configure --auto --style=Lean --prompt_colors='True color' --show_time='24-hour format' --lean_prompt_height='Two lines' --prompt_connection=Dotted --prompt_connection_andor_frame_color=Lightest --prompt_spacing=Sparse --icons='Many icons' --transient=Yes"
