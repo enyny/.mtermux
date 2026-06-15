@@ -9,9 +9,65 @@ termux-wake-lock
 
 url="$1"
 
-LOCKFILE="$HOME/.dlp_log/.yt-dlp.lock"
 LOGDIR="$HOME/.dlp_log"
-mkdir -p "$LOGDIR"
+QUEUE_DIR="$LOGDIR/queue"
+DAEMON_LOCK="$LOGDIR/.daemon.lock"
+mkdir -p "$LOGDIR" "$QUEUE_DIR"
+
+new_log() {
+    echo "$LOGDIR/$(date +%Y%m%d-%H%M%S)-$$-${RANDOM}.log"
+}
+
+# Write a self-contained shell script into the queue directory.
+# Usage: enqueue logfile cmd [args...]
+enqueue() {
+    local logfile="$1"; shift
+    local job="$QUEUE_DIR/$(date +%Y%m%d-%H%M%S)-$$-${RANDOM}.sh"
+    {
+        printf '#!/data/data/com.termux/files/usr/bin/bash\n'
+        printf '%q ' "$@"
+        printf '>> %q 2>&1\n' "$logfile"
+    } > "$job"
+    chmod +x "$job"
+}
+
+# Queue a download then immediately exit (returns to last app).
+# A single daemon process serialises all jobs; wake lock is held until
+# the queue is empty.
+# Usage: run_bg logfile cmd [args...]
+run_bg() {
+    enqueue "$@"
+
+    (
+        exec 9>"$DAEMON_LOCK"
+        flock -x 9          # at most one daemon at a time; blocks if one is running
+
+        # Re-acquire in case a previous daemon already released the wake lock
+        termux-wake-lock
+
+        # Recover any job that was interrupted when a prior daemon was killed
+        for stale in "$QUEUE_DIR"/*.running; do
+            [ -f "$stale" ] && mv "$stale" "${stale%.running}.sh"
+        done
+
+        while true; do
+            next=$(ls -1 "$QUEUE_DIR"/*.sh 2>/dev/null | sort | head -1)
+            [ -z "$next" ] && break
+
+            running="${next%.sh}.running"
+            mv "$next" "$running" 2>/dev/null || continue  # race guard
+
+            bash "$running"
+            termux-media-scan "/storage/6235-3339/" >/dev/null 2>&1
+            rm -f "$running"
+        done
+
+        termux-wake-unlock
+
+    ) >/dev/null 2>&1 & disown
+
+    exit 0
+}
 
 echo "What should I do with:"
 echo "$url"
@@ -25,31 +81,10 @@ echo "0) yt_dlp_mp3"
 echo "s) yt_dlp_split_audio"
 echo "g) gallery_dl"
 echo "a) dl_with_aria2c"
-echo "z) nothing"
-
-run_bg() {
-    (
-        # Acquire an exclusive lock on the lockfile
-        # This blocks execution until the previous download finishes
-        exec 9>"$LOCKFILE"
-        flock -x 9
-
-        "$@"
-
-        termux-media-scan "/storage/6235-3339/" >/dev/null 2>&1
-        termux-wake-unlock
-    ) >/dev/null 2>&1 & disown
-
-    exit 0
-}
-
-new_log() {
-    echo "$LOGDIR/$(date +%Y%m%d-%H%M%S).log"
-}
+echo "q) quit"
 
 while true; do
     printf "\nChoice: "
-
     read -rn 1 CHOICE
     echo
 
@@ -57,73 +92,51 @@ while true; do
 
         1)
             logfile=$(new_log)
-
-            run_bg \
-            sh -c '
+            run_bg "$logfile" \
                 yt-dlp \
                 --no-config \
                 --no-mtime \
                 -o "%(webpage_url_domain)s/%(title)s [%(id)s].%(ext)s" \
-                "$1" >> "$2" 2>&1
-            ' sh "$url" "$logfile"
+                "$url"
             ;;
 
         2)
             logfile=$(new_log)
-
-            run_bg \
-            sh -c '
-                yt-dlp --x --no-playlist "$1" >> "$2" 2>&1
-            ' sh "$url" "$logfile"
+            run_bg "$logfile" yt-dlp --x --no-playlist "$url"
             ;;
-            
+
         3)
             logfile=$(new_log)
-
-            run_bg \
-            sh -c '
-                yt-dlp --x "$1" >> "$2" 2>&1
-            ' sh "$url" "$logfile"
+            run_bg "$logfile" yt-dlp --x "$url"
             ;;
 
         4)
             logfile=$(new_log)
-
-            run_bg \
-            sh -c '
-                yt-dlp --4 "$1" >> "$2" 2>&1
-            ' sh "$url" "$logfile"
+            run_bg "$logfile" yt-dlp --4 "$url"
             ;;
 
         7)
             logfile=$(new_log)
-
-            run_bg \
-            sh -c '
-                yt-dlp --7 "$1" >> "$2" 2>&1
-            ' sh "$url" "$logfile"
+            run_bg "$logfile" yt-dlp --7 "$url"
             ;;
 
         0)
             logfile=$(new_log)
+            run_bg "$logfile" yt-dlp --xx "$url"
+            ;;
 
-            run_bg \
-            sh -c '
-                yt-dlp --xx "$1" >> "$2" 2>&1
-            ' sh "$url" "$logfile"
+        r)
+            logfile=$(new_log)
+            run_bg "$logfile" yt-dlp --rlp "$url"
             ;;
 
         s)
             logfile=$(new_log)
-
-            run_bg \
-            sh -c '
-                yt-dlp --xpl "$1" >> "$2" 2>&1
-            ' sh "$url" "$logfile"
+            run_bg "$logfile" yt-dlp --xpl "$url"
             ;;
 
         g)
-            flock "$HOME/.dlp_log/.gallery_dl.lock" gallery-dl "$url"
+            flock "$LOGDIR/.gallery_dl.lock" gallery-dl "$url"
             termux-wake-unlock
             exit 0
             ;;
@@ -132,12 +145,11 @@ while true; do
             aria2c \
                 --seed-time=0 \
                 "$url"
-
             termux-wake-unlock
             exit 0
             ;;
 
-        z)
+        q)
             echo "bye"
             termux-wake-unlock
             exit 0
